@@ -23,9 +23,9 @@ const Items = (prop) => {
   
   return (
     <>
-      <div className="flex items-center justify-between px-4 py-3 my-5 bg-gray-600 rounded-xl">
-        <div className="flex flex-row items-center justify-between w-1/5 ">
-          <div className="w-2/4 px-4 py-1 text-center bg-transparent bg-gray-800 border dashed rounded-xl">
+      <div className="flex flex-col items-center justify-between px-4 py-3 my-5 bg-gray-600 sm:flex-row rounded-xl">
+        <div className="flex flex-col items-center justify-between w-3/5 sm:flex-row lg:w-1/5 md:w-2/5 sm:w-3/5">
+          <div className="px-4 py-1 text-center bg-transparent bg-gray-800 border lg:w-7/12 dashed rounded-xl">
             <h4>{months[month]}</h4>
             <h4>{year}</h4>
             <h4>{day}</h4>

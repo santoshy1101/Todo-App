@@ -5,7 +5,7 @@ const InputItems = () => {
   const [info, setInfo] = useState([])
   const [data, setData] = useState([])
   const [title, setTitle] = useState('')
-  const [date, setDate] = useState('')
+  const [date, setDate] = useState("2022-12-21")
   const [amount, setAmount] = useState('')
   const [id, setId] = useState(1)
 
@@ -30,8 +30,8 @@ const InputItems = () => {
   }
   return (
     <div className="h-full p-10 font-bold text-slate-800 bg-gradient-to-r from-indigo-800">
-      <div className="w-2/4 p-5 m-auto rounded-3xl bg-light-violet">
-        <div className="grid grid-cols-2 gap-4 p-10 ">
+      <div className="w-full p-5 m-auto border-2 rounded-3xl bg-light-violet lg:w-6/12 md:w-9/12 sm:w-10/12">
+        <div className="grid grid-cols-1 gap-4 p-10 sm:grid-cols-2">
           <div className="flex flex-col">
             <label>Title</label>
             <input
@@ -53,6 +53,7 @@ const InputItems = () => {
           <div className="flex flex-col">
             <label>Date</label>
             <input
+            onKeyPress={(e)=> e.key==="Enter" && handleAdd()}
               onChange={(e) => setDate(e.target.value)}
               value={date}
               type="date"
@@ -61,8 +62,8 @@ const InputItems = () => {
           </div>
         </div>
         <button
-          onClick={handleAdd}
-          className="relative bottom-0 w-32 h-12 font-bold cursor-pointer left-3/4 rounded-2xl hover:bg-violet-600 bg-violet-900 text-slate-50"
+          onClick={handleAdd} 
+          className="w-8/12 h-12 font-bold cursor-pointer md:w-3/12 lg:5/12 left-3/4 sm:w-3/12 rounded-2xl hover:bg-violet-600 bg-violet-900 text-slate-50"
         >
           Add Items
         </button>

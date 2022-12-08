@@ -1,4 +1,4 @@
-import Wheather from './components/Wheather'
+
 import Navbar from './components/Navabar'
 import { useState } from 'react'
 import InputItems from './components/InputItems'
