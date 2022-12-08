@@ -5,13 +5,13 @@ const InputItems = () => {
   const [info, setInfo] = useState([])
   const [data, setData] = useState([])
   const [title, setTitle] = useState('')
-  const [date, setDate] = useState("2022-12-08")
+  const [date, setDate] = useState("")
   const [amount, setAmount] = useState('')
   const [id, setId] = useState(1)
 
   const handleAdd = () => {
-    if (title === '' && amount === '' && date === '') {
-      return
+    if (title === '' || amount === '' || date === '') {
+      alert("Fill All Input")
     } else {
       setId(id + 1)
       const newInfo = { title, date, amount, id }
