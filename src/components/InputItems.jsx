@@ -5,7 +5,7 @@ const InputItems = () => {
   const [info, setInfo] = useState([])
   const [data, setData] = useState([])
   const [title, setTitle] = useState('')
-  const [date, setDate] = useState("2022-12-21")
+  const [date, setDate] = useState("2022-12-08")
   const [amount, setAmount] = useState('')
   const [id, setId] = useState(1)
 
