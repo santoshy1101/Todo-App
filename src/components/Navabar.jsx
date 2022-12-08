@@ -23,8 +23,8 @@ const Navabar = ({ tog }) => {
             onClick={handlMode}
             className={`shadow-lg shadow-cyan-500 duration-1000 outline outline-offset-2 outline-cyan-500 px-5 py-2 rounded-full   ${
               mode
-                ? 'bg-sky-800 text-stone-50 grayscale rotate-180 '
-                : 'bg-cyan-800 text-stone-50 -hue-rotate-180'
+                ? 'bg-sky-800 text-stone-50 grayscale -rotate-180 '
+                : 'bg-cyan-800 text-stone-50 rotate-180'
             }`}
           >
             {mode ? <BsFillCloudSunFill /> : <BsFillCloudMoonFill />}

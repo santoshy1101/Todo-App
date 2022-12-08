@@ -30,7 +30,7 @@ const InputItems = () => {
   }
   return (
     <div className={`${info.length<1 ? "h-screen" : "h-full"}  p-10 font-bold text-slate-800 bg-gradient-to-r from-indigo-800`}>
-      <div className="w-full p-5 m-auto border-2 rounded-3xl bg-light-violet lg:w-6/12 md:w-9/12 sm:w-10/12">
+      <div className="w-full p-5 m-auto rounded-3xl bg-light-violet lg:w-6/12 md:w-9/12 sm:w-10/12">
         <div className="grid grid-cols-1 gap-4 p-10 sm:grid-cols-2">
           <div className="flex flex-col">
             <label>Title</label>
