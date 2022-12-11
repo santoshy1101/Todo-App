@@ -83,7 +83,6 @@ const InputItems = () => {
             <option>2021</option>
             <option>2020</option>
             <option>2019</option>
-            
             <option>2018</option>
           </select>
         </div>
