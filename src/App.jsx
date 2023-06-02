@@ -10,7 +10,7 @@ function App() {
   const Mode = (val) => {
     // console.log(val)
     val
-      ? setColor('bg-slate-300 text-gray-800')
+      ? setColor('bg-slate-400 text-gray-800')
       : setColor('bg-sky-900 text-gray-50')
   }
   return (
